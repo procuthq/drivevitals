@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DriveVitals: is your cable slowing your SSD? Drive speed, cable and SSD health for Mac</title>
+<meta name="description" content="DriveVitals lives in your Mac's menu bar and shows the real speed of every drive, SD card and cable, plus the health of your internal SSD. Free, with an optional one-time Pro upgrade.">
+<link rel="icon" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<meta property="og:title" content="DriveVitals: is your cable slowing your SSD?">
+<meta property="og:description" content="Real link speed, cable warnings and SSD health for every drive on your Mac.">
+<meta property="og:image" content="https://drivevitals.app/assets/icon.png">
+<meta property="og:url" content="https://drivevitals.app/">
+<link rel="preload" href="fonts/space-grotesk-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="assets/icon.png" alt="">DriveVitals</a>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#pricing">Pro</a>
+      <a href="#faq">FAQ</a>
+      <!-- Goes live after Apple notarization (step 4) -->
+      <a class="btn btn-primary btn-small" href="https://github.com/procuthq/drivevitals/releases/latest/download/DriveVitals.dmg" data-goatcounter-click="download-header">Download free</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <h1>Is your cable slowing your SSD?</h1>
+        <p class="lede">DriveVitals lives in your Mac's menu bar and shows the real speed of every drive, SD card and cable, plus the health of your internal SSD. When something is holding a drive back, it tells you in plain English.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="https://github.com/procuthq/drivevitals/releases/latest/download/DriveVitals.dmg" data-goatcounter-click="download-hero">Download free</a>
+          <a class="btn btn-quiet" href="#pricing">See what Pro adds</a>
+        </div>
+        <p class="fine">For macOS 14 Sonoma or later. Notarized by Apple. No account, no tracking.</p>
+      </div>
+
+      <figure class="readout" aria-label="Read speed of the same Samsung T7 SSD on two different cables: 973 MB/s on a 10 Gb/s cable, 37 MB/s on a USB 2.0 cable">
+        <div class="readout-drive">PSSD-T7 &nbsp; Samsung T7, 2 TB</div>
+        <div class="readout-row">
+          <div class="readout-label"><span>Good cable, 10 Gb/s</span><strong>973 MB/s</strong></div>
+          <div class="bar"><i style="--w:100%"></i></div>
+        </div>
+        <div class="readout-row slow">
+          <div class="readout-label"><span>Older cable, USB 2.0</span><strong>37 MB/s</strong></div>
+          <div class="bar"><i style="--w:3.8%"></i></div>
+        </div>
+        <figcaption class="readout-note">Same drive, same Mac. <b>Only the cable changed, and reading was 26 times slower.</b> Measured with DriveVitals on a MacBook Pro.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="shows" id="features">
+    <div class="wrap">
+      <figure>
+        <div class="shot"><img src="assets/app-popup.png" alt="The DriveVitals window in the Mac menu bar, listing Macintosh HD, an SD card in a USB reader and a Samsung T7, each with its connection speed and free space" width="736" height="910"></div>
+        <figcaption class="shot-caption">One click on the menu bar icon shows every drive.</figcaption>
+      </figure>
+      <div>
+        <h2>Everything your drives won't tell you</h2>
+        <p class="section-intro">Finder shows a drive's name and free space. DriveVitals shows how it's actually connected and how it's doing.</p>
+        <ul class="feature-list">
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9h4v6H4zM8 12h8M16 9h4v6h-4z"/></svg>
+            <div><h3>The real connection speed</h3><p>See the speed your Mac actually negotiated with each drive, not the number on the box. USB 2.0, 5, 10, 20 Gb/s or Thunderbolt.</p></div>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 2 20h20L12 3zM12 10v4M12 17h.01"/></svg>
+            <div><h3>A warning when a cable is slow</h3><p>Plug in a fast SSD through a USB 2.0 cable, hub or adapter and you get a notification straight away, before you start a big copy.</p></div>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12h5l2-5 4 10 2-5h7"/></svg>
+            <div><h3>The health of your Mac's SSD</h3><p>How much of its rated life is used, how many terabytes have been written, its temperature and hours of use. If the SSD reports a problem, you're told to back up.</p></div>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 18a8 8 0 1 1 14 0M12 14l4-5"/></svg>
+            <div><h3>A speed test with a verdict</h3><p>Run a 1 GB or 4 GB test and read what the result means: whether the drive, the card or the cable is the bottleneck, and what speed to expect.</p></div>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4 4 13h16L12 4zM4 18h16"/></svg>
+            <div><h3>Eject that tells you why not</h3><p>When a drive won't eject, DriveVitals names the app that's still using it. If nothing else works, Force Eject is one click away.</p></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Launch video goes here once it's published:
+  <section class="video"><div class="wrap">
+    <h2>See it in action</h2>
+    <iframe ... YouTube embed ...></iframe>
+  </div></section> -->
+
+  <section class="pricing" id="pricing">
+    <div class="wrap">
+      <h2>Free to use. Pro when you want the details.</h2>
+      <p class="section-intro">The free version covers what most people need every day. Pro is a one-time purchase, with no subscription.</p>
+      <div class="plans">
+        <div class="plan">
+          <div class="plan-head"><h3>DriveVitals</h3><span class="price">Free</span></div>
+          <ul>
+            <li>Every drive and SD card, with its real connection speed</li>
+            <li>Slow-cable warnings</li>
+            <li>Eject, Mount and Force Eject from the menu bar</li>
+            <li>Internal SSD health status and warnings</li>
+            <li>3 speed tests with a verdict, to try Pro</li>
+          </ul>
+          <a class="btn btn-quiet" href="https://github.com/procuthq/drivevitals/releases/latest/download/DriveVitals.dmg" data-goatcounter-click="download-pricing">Download free</a>
+        </div>
+        <div class="plan pro">
+          <div class="plan-head"><h3>DriveVitals Pro <span class="pro-badge">PRO</span></h3><span class="price">$7.99<small>one time</small></span></div>
+          <ul>
+            <li>Unlimited speed tests with a verdict</li>
+            <li>SSD details: life used, terabytes written, temperature, hours</li>
+            <li>SD card details: type, speed class, maker, date</li>
+            <li>The name of the app blocking an eject</li>
+            <li>Copy results to share in a review or forum</li>
+          </ul>
+          <!-- TODO before launch: live Polar checkout link -->
+          <a class="btn btn-buy" href="#pricing" data-goatcounter-click="buy-pro">Buy Pro for $7.99</a>
+          <p class="terms">Works on up to 3 Macs. Includes all 1.x updates. 14-day refund, no questions asked.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq" id="faq">
+    <div class="wrap">
+      <h2>Questions</h2>
+      <div class="faq-list">
+        <details>
+          <summary>Is the free version really free?</summary>
+          <p>Yes, with no time limit and no account. You get every drive's connection speed, slow-cable warnings, eject and mount, and internal SSD health warnings for as long as you use it. Three speed tests with a verdict are included so you can try Pro.</p>
+        </details>
+        <details>
+          <summary>How do I install it?</summary>
+          <p>Open DriveVitals.dmg, drag DriveVitals into Applications, then open it. Its icon appears in the menu bar at the top of the screen. You can make it start when you log in from Settings.</p>
+        </details>
+        <details>
+          <summary>How many Macs can I use Pro on?</summary>
+          <p>Up to 3. Moving to a new Mac? Open Settings, then License, and click Remove license from this Mac before activating it on the new one. You can also manage your Macs from the link in your purchase email.</p>
+        </details>
+        <details>
+          <summary>Are updates included?</summary>
+          <p>Yes. DriveVitals checks for updates and installs them for you, and every 1.x update is included with Pro.</p>
+        </details>
+        <details>
+          <summary>Can I get a refund?</summary>
+          <p>Yes, within 14 days of buying, for any reason. Email <a href="mailto:support@drivevitals.app">support@drivevitals.app</a> with your order email. <a href="refunds.html">Refund policy</a></p>
+        </details>
+        <details>
+          <summary>Why does macOS ask to let DriveVitals access a removable volume?</summary>
+          <p>macOS asks once, the first time DriveVitals writes a test file to a USB drive or SD card. Click Allow and the test continues by itself. Viewing speeds and health doesn't need this permission.</p>
+        </details>
+        <details>
+          <summary>Why does my SD card stop at about 90 MB/s?</summary>
+          <p>That's the normal limit of UHS-I cards and most card readers, including the SD slot in many Macs. Cards rated higher usually need the maker's own reader. DriveVitals explains this in the verdict, so you know the card isn't faulty.</p>
+        </details>
+        <details>
+          <summary>Can it show the health of USB drives too?</summary>
+          <p>Not yet. Most USB enclosures don't pass health data through to macOS, so DriveVitals shows health for your Mac's internal SSD and speed for everything else.</p>
+        </details>
+        <details>
+          <summary>What data does DriveVitals collect?</summary>
+          <p>None. Speed tests and drive details never leave your Mac. The app only goes online to check for updates and, if you buy Pro, to verify your license. <a href="privacy.html">Privacy policy</a></p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="maker" id="maker">
+    <div class="wrap">
+      <div class="maker-card">
+        <img src="assets/darkhan.jpg" alt="Darkhan, the maker of DriveVitals" width="120" height="120">
+        <div>
+          <h2>Made by an engineer who loves tech</h2>
+          <p>Hi, I'm Darkhan, a telecommunications engineer (MSc, University of Melbourne) with more than 20 years of designing and building technology. I started out building embedded hardware and firmware, then delivered networks and IT solutions for telecom operators, banks and enterprises. I'm also a digital creator: on DailyTweak, my YouTube channel in English and Russian, I review tech, AI tools, apps and code.</p>
+          <p>While testing SSDs, I kept running into problems macOS never revealed: a cable quietly running at USB 2.0 speed, your Mac's own SSD slowly wearing out, a drive that won't eject without saying why. So I built DriveVitals, my first public app, to make them visible.</p>
+          <p class="links"><a href="https://www.youtube.com/@DailyTweak">Watch DailyTweak on YouTube</a><a href="mailto:support@drivevitals.app">support@drivevitals.app</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>Made by <a href="https://dailytweak.com">DailyTweak</a>. Watch on YouTube in <a href="https://www.youtube.com/@DailyTweak">English</a> or <a href="https://www.youtube.com/@DailyTweakRus">Russian</a>.</p>
+    <nav>
+      <a href="mailto:support@drivevitals.app">support@drivevitals.app</a>
+      <a href="changelog.html">What's new</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="refunds.html">Refunds</a>
+      <a href="press.html">Press</a>
+    </nav>
+  </div>
+</footer>
+
+<!-- Privacy-friendly analytics (no cookies). Activate after creating the "drivevitals" site in GoatCounter. -->
+<!-- <script data-goatcounter="https://drivevitals.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script> -->
+</body>
+</html>
