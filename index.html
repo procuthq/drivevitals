@@ -74,7 +74,11 @@
           </li>
           <li>
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 2 20h20L12 3zM12 10v4M12 17h.01"/></svg>
-            <div><h3>A warning when a cable is slow</h3><p>Plug in a fast SSD through a USB 2.0 cable, hub or adapter and you get a notification straight away, before you start a big copy.</p></div>
+            <div><h3>A warning when a cable is slow</h3><p>Plug in a fast SSD through a USB 2.0 cable, hub or adapter and you get a notification straight away, before you start a big copy. DriveVitals also tells you when the drive's own adapter is the limit, so you don't buy a new cable that won't help.</p></div>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v10H4zM9 19h6M12 15v4"/></svg>
+            <div><h3>Will it work on Windows?</h3><p>Every drive shows its format and partition scheme, like exFAT · GPT, with what that means in practice: read-only NTFS, the 4 GB file limit of FAT32, or a Mac-only format a PC can't open.</p></div>
           </li>
           <li>
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12h5l2-5 4 10 2-5h7"/></svg>
@@ -112,7 +116,8 @@
           <div class="plan-head"><h3>DriveVitals</h3><span class="price">Free</span></div>
           <ul>
             <li>Every drive and SD card, with its real connection speed</li>
-            <li>Slow-cable warnings</li>
+            <li>Slow-cable warnings that say what's to blame</li>
+            <li>Format and Windows compatibility for every drive</li>
             <li>Eject, Mount and Force Eject from the menu bar</li>
             <li>Internal SSD health status and warnings</li>
             <li>3 speed tests with a verdict, to try Pro</li>
@@ -168,6 +173,14 @@
           <p>That's the normal limit of UHS-I cards and most card readers, including the SD slot in many Macs. Cards rated higher usually need the maker's own reader. DriveVitals explains this in the verdict, so you know the card isn't faulty.</p>
         </details>
         <details>
+          <summary>Will my drive work on Windows?</summary>
+          <p>DriveVitals shows each drive's format under its name. exFAT works on Mac and Windows. FAT32 works almost everywhere but can't hold files over 4 GB. APFS and Mac OS Extended are Mac-only, and Windows can't read them without extra software. To share a drive between a Mac and a PC, use exFAT. Reformatting erases the drive, so copy your files off first.</p>
+        </details>
+        <details>
+          <summary>Why can't I copy files to my drive?</summary>
+          <p>It's most likely formatted as NTFS, the Windows format. macOS can read NTFS but can't write to it. DriveVitals marks these drives as read-only. To write to it, reformat it as exFAT in Disk Utility (this erases it) or install an NTFS driver.</p>
+        </details>
+        <details>
           <summary>Can it show the health of USB drives too?</summary>
           <p>Not yet. Most USB enclosures don't pass health data through to macOS, so DriveVitals shows health for your Mac's internal SSD and speed for everything else.</p>
         </details>
@@ -194,6 +207,17 @@
           <p class="links"><a href="https://www.youtube.com/@DailyTweak">Watch DailyTweak on YouTube</a><a href="mailto:support@drivevitals.app">support@drivevitals.app</a></p>
         </div>
       </div>
+    </div>
+  </section>
+
+  <section class="closing">
+    <div class="wrap">
+      <h2>Find out what your cables are really doing.</h2>
+      <p>Free, no account. Plug in a drive and you'll know in one click.</p>
+      <div class="actions">
+        <a class="btn btn-light" href="https://github.com/procuthq/drivevitals/releases/latest/download/DriveVitals.dmg" data-goatcounter-click="download-closing">Download free</a>
+      </div>
+      <p class="fine">For macOS 14 Sonoma or later · Notarized by Apple</p>
     </div>
   </section>
 </main>

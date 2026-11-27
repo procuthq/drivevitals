@@ -190,3 +190,19 @@ kbd { font: 500 14px var(--mono); background: var(--surface); border: 1px solid 
 .trust li { display: inline-flex; align-items: center; gap: 6px; }
 .trust svg { width: 14px; height: 14px; fill: none; stroke: var(--pulse-ink); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; flex: none; }
 .trust + .fine { margin-top: 8px; font-size: 13px; color: var(--muted); }
+
+/* Screenshot stays in view while the feature list scrolls (desktop only) */
+@media (min-width: 861px) { .shows figure { position: sticky; top: 24px; } }
+
+/* Trust chips: keep each chip on one line */
+.trust { gap: 6px 14px; font-size: 13.5px; }
+.trust li { white-space: nowrap; }
+
+/* Closing band: the last call to download */
+.closing { background: var(--navy); color: #E7EDF5; text-align: center; padding: 80px 0; }
+.closing h2 { color: #fff; max-width: 18em; margin: 0 auto; text-wrap: balance; }
+.closing p { color: #9FB0C6; margin-top: 14px; font-size: 18px; }
+.closing .actions { margin-top: 28px; display: flex; justify-content: center; }
+.closing .fine { font-size: 14px; margin-top: 16px; }
+.btn-light { background: var(--pulse); color: var(--navy); }
+.btn-light:hover { background: #6EE7B7; color: var(--navy); }
