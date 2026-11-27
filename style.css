@@ -186,7 +186,7 @@ kbd { font: 500 14px var(--mono); background: var(--surface); border: 1px solid 
 }
 
 /* Trust chips under the hero download button */
-.hero .trust { list-style: none; padding: 0; margin: 18px 0 0; display: flex; flex-wrap: wrap; gap: 8px 18px; font-size: 14px; color: var(--ink); }
-.hero .trust li { display: inline-flex; align-items: center; gap: 6px; }
-.hero .trust svg { width: 14px; height: 14px; fill: none; stroke: var(--pulse-ink); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; flex: none; }
-.hero .trust + .fine { margin-top: 8px; font-size: 13px; }
+.trust { list-style: none; padding: 0; margin: 18px 0 0; display: flex; flex-wrap: wrap; gap: 8px 18px; font-size: 14px; color: var(--ink); }
+.trust li { display: inline-flex; align-items: center; gap: 6px; }
+.trust svg { width: 14px; height: 14px; fill: none; stroke: var(--pulse-ink); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; flex: none; }
+.trust + .fine { margin-top: 8px; font-size: 13px; color: var(--muted); }
