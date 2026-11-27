@@ -7,6 +7,22 @@
     <language>en</language>
     <!-- New releases go here, newest first. Each <item> is generated with Sparkle's generate_appcast / sign_update. -->
     <item>
+      <title>Version 1.2</title>
+      <pubDate>Fri, 27 Nov 2026 20:58:13 +0000</pubDate>
+      <sparkle:version>3</sparkle:version>
+      <sparkle:shortVersionString>1.2</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+<ul>
+  <li>How to fix: for NTFS (read-only on a Mac), FAT32 (4 GB file limit) and Apple Partition Map drives, reformat as exFAT in one click, or follow the Disk Utility steps. Only the affected volume is erased when a drive has several.</li>
+  <li>SD cards: format to the SD standard (FAT32 up to 32 GB, exFAT above, with MBR), or use SD Card Formatter.</li>
+  <li>Drives with several volumes: each volume listed with its own format and free space, and Open lets you pick which one.</li>
+  <li>Clearer status icons.</li>
+</ul>
+      ]]></description>
+      <enclosure url="https://github.com/procuthq/drivevitals/releases/download/v1.2/DriveVitals.dmg" type="application/octet-stream" sparkle:edSignature="hMJYXW09DpMsbrwyCZiAsYvlOUWcmqKKzSrIwCJKf85C97s9w4RyBz8y3ldqS71X9UWHtXaV0AbCv4S8uv1/Bw==" length="3597143" />
+    </item>
+    <item>
       <title>Version 1.1</title>
       <pubDate>Fri, 27 Nov 2026 14:31:54 +0000</pubDate>
       <sparkle:version>2</sparkle:version>
