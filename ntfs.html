@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Write to NTFS drives on a Mac | DriveVitals</title>
+<meta name="description" content="Your Mac can read Windows NTFS drives but not write to them. Two ways to fix it: reformat as exFAT for free, or install an NTFS driver.">
+<meta name="robots" content="index">
+<link rel="icon" href="assets/favicon.png?v=2">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png?v=2">
+<link rel="preload" href="fonts/space-grotesk-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="assets/icon.png" alt="">DriveVitals</a>
+    <nav><a href="/#features">Features</a><a href="/#pricing">Pro</a><a href="/#faq">FAQ</a></nav>
+  </div>
+</header>
+<main class="page"><div class="wrap">
+
+<h1>Write to an NTFS drive on your Mac</h1>
+<p class="meta">Your Mac can open and read drives formatted in Windows' NTFS format, but it can't write to them. There are two ways to fix that.</p>
+
+<h2>Free: reformat it as exFAT</h2>
+<p>exFAT works on Mac and Windows, with no file-size limit. Reformatting erases the drive, so copy your files somewhere else first.</p>
+<ol class="steps">
+  <li>Open Disk Utility (in Applications, then Utilities).</li>
+  <li>Choose View, then Show All Devices.</li>
+  <li>In the sidebar, select the drive itself (the top line), not the volume under it.</li>
+  <li>Click Erase. Choose Format: ExFAT and Scheme: GUID Partition Map.</li>
+  <li>Click Erase, then Done. Copy your files back.</li>
+</ol>
+<p>Best when you just need one drive that works everywhere.</p>
+
+<h2>Keep NTFS: install an NTFS driver</h2>
+<p>A driver adds NTFS writing to macOS, so Finder can copy, rename and delete files on the drive without erasing anything. Best when the drive has to stay NTFS, for example a Windows backup drive or one shared with Windows PCs at work.</p>
+<ul>
+  <li><a href="https://www.paragon-software.com/home/ntfs-mac/">Paragon NTFS for Mac</a>: paid, with a free trial.</li>
+  <li><a href="https://ntfsformac.tuxera.com/">Microsoft NTFS for Mac by Tuxera</a>: paid, with a free trial.</li>
+</ul>
+<p>Both are made by long-standing storage companies. DriveVitals isn't connected to either of them.</p>
+
+<h2>How DriveVitals helps</h2>
+<p>DriveVitals shows each drive's format under its name and marks NTFS drives as read-only, so you know before you start copying. Click How to fix under the warning for these steps.</p>
+<p><a class="btn btn-primary" href="https://github.com/procuthq/drivevitals/releases/latest/download/DriveVitals.dmg">Download DriveVitals free</a></p>
+
+</div></main>
+<footer class="site-footer">
+  <div class="wrap">
+    <p>Made by <a href="https://dailytweak.com">DailyTweak</a>.</p>
+    <nav>
+      <a href="mailto:support@drivevitals.app">support@drivevitals.app</a>
+      <a href="changelog.html">What's new</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="refunds.html">Refunds</a>
+      <a href="press.html">Press</a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>
