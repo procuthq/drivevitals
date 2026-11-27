@@ -6,5 +6,22 @@
     <description>DriveVitals updates</description>
     <language>en</language>
     <!-- New releases go here, newest first. Each <item> is generated with Sparkle's generate_appcast / sign_update. -->
+    <item>
+      <title>Version 1.1</title>
+      <pubDate>Fri, 27 Nov 2026 14:31:54 +0000</pubDate>
+      <sparkle:version>2</sparkle:version>
+      <sparkle:shortVersionString>1.1</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+<ul>
+  <li>Format and partition scheme for every drive, with plain-English tips: NTFS is read-only on a Mac, FAT32 can't hold files over 4 GB, and which formats work on Windows.</li>
+  <li>Smarter slow-connection warnings: DriveVitals now tells a drive whose own adapter is USB 2.0 apart from a slow cable, hub or port.</li>
+  <li>Show all USB devices: a clear type and icon for every device, each hub listed once, sorted by type.</li>
+  <li>The status icon now also warns when a drive is low on space.</li>
+  <li>Hover over GPT, MBR or Apple Partition Map to see what it means.</li>
+</ul>
+      ]]></description>
+      <enclosure url="https://github.com/procuthq/drivevitals/releases/download/v1.1/DriveVitals.dmg" type="application/octet-stream" sparkle:edSignature="kaKNYvry8O4ggCN2VYmnzVzA6ONcYarbELNojvytvD38si5QdZi6tbeY/4CQxPTTg6zmkxFTEUhmu5GoWysRCw==" length="3502500" />
+    </item>
   </channel>
 </rss>
