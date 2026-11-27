@@ -39,7 +39,7 @@
           <a class="btn btn-primary" href="https://github.com/procuthq/drivevitals/releases/latest/download/DriveVitals.dmg" data-goatcounter-click="download-hero">Download free</a>
           <a class="btn btn-quiet" href="#pricing">See what Pro adds</a>
         </div>
-        <p class="fine">For macOS 14 Sonoma or later. Notarized by Apple. No account, no tracking.</p>
+        <p class="fine">For macOS 14 Sonoma or later. Notarized by Apple. 0% CPU when idle. No account, no tracking.</p>
       </div>
 
       <figure class="readout" aria-label="Read speed of the same Samsung T7 SSD on two different cables: 973 MB/s on a 10 Gb/s cable, 37 MB/s on a USB 2.0 cable">
@@ -165,6 +165,10 @@
         <details>
           <summary>Can it show the health of USB drives too?</summary>
           <p>Not yet. Most USB enclosures don't pass health data through to macOS, so DriveVitals shows health for your Mac's internal SSD and speed for everything else.</p>
+        </details>
+        <details>
+          <summary>Will it slow down my Mac?</summary>
+          <p>No. DriveVitals is a 5.4 MB app. Waiting in the menu bar, it uses 0% CPU and about 42 MB of memory, with no measurable energy impact. It only works harder during a speed test you start: a few seconds at under a third of one CPU core, then it goes straight back to idle. Measured on a MacBook Pro with M1 Pro, macOS 15.</p>
         </details>
         <details>
           <summary>What data does DriveVitals collect?</summary>
