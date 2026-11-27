@@ -199,10 +199,10 @@ kbd { font: 500 14px var(--mono); background: var(--surface); border: 1px solid 
 .trust li { white-space: nowrap; }
 
 /* Closing band: the last call to download */
-.closing { background: var(--navy); color: #E7EDF5; text-align: center; padding: 80px 0; }
-.closing h2 { color: #fff; max-width: 18em; margin: 0 auto; text-wrap: balance; }
-.closing p { color: #9FB0C6; margin-top: 14px; font-size: 18px; }
-.closing .actions { margin-top: 28px; display: flex; justify-content: center; }
-.closing .fine { font-size: 14px; margin-top: 16px; }
+.closing { background: var(--navy); color: #E7EDF5; text-align: center; padding: 48px 0 44px; }
+.closing h2 { color: #fff; max-width: 22em; margin: 0 auto; text-wrap: balance; font-size: clamp(26px, 3vw, 34px); }
+.closing p { color: #9FB0C6; margin-top: 10px; font-size: 17px; }
+.closing .actions { margin-top: 20px; display: flex; justify-content: center; }
+.closing .fine { font-size: 14px; margin-top: 12px; }
 .btn-light { background: var(--pulse); color: var(--navy); }
 .btn-light:hover { background: #6EE7B7; color: var(--navy); }
