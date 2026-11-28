@@ -230,3 +230,14 @@ kbd { font: 500 14px var(--mono); background: var(--surface); border: 1px solid 
 
 /* quiet buttons keep ink colour, also after being clicked */
 .btn.btn-quiet, .btn.btn-quiet:visited, .btn.btn-quiet:hover { color: var(--ink); }
+
+/* Maker links: icon + label, like the DailyTweak hub footer, no underline */
+.maker-card .links a { display: inline-flex; align-items: center; gap: 8px; text-decoration: none; color: var(--ink); font-weight: 500; }
+.maker-card .links a svg { flex: none; }
+.maker-card .links a:hover { color: var(--blue); }
+
+/* Footer links: no underline, like Apple's footer and the DailyTweak hub; underline only on hover */
+.site-footer a { text-decoration: none; }
+.site-footer a:hover { color: var(--ink); text-decoration: underline; }
+.site-footer .sep { margin: 0 8px; opacity: .5; }
+.site-footer .yt { display: inline-flex; align-items: center; gap: 6px; color: var(--ink); }
