@@ -227,3 +227,6 @@ kbd { font: 500 14px var(--mono); background: var(--surface); border: 1px solid 
 }
 @keyframes steps-in { from { opacity: 0; transform: translateY(-6px); } to { opacity: 1; transform: none; } }
 @media (prefers-reduced-motion: reduce) { .btn { transition: none; } .btn:active { transform: none; } .btn .dl-ring { animation: none; } }
+
+/* quiet buttons keep ink colour, also after being clicked */
+.btn.btn-quiet, .btn.btn-quiet:visited, .btn.btn-quiet:hover { color: var(--ink); }

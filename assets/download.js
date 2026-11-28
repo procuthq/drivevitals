@@ -5,9 +5,9 @@
   var ua = navigator.userAgent;
   if (/iPhone|iPad|iPod|Android/i.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1)) return;
   var ru = document.documentElement.lang === 'ru';
-  var T = ru ? { busy: 'Загрузка…', done: 'Загрузка началась', head: 'Осталось три шага',
+  var T = ru ? { busy: 'Загрузка…', done: 'Загрузка началась', again: 'Скачать ещё раз', head: 'Осталось три шага',
       s1: 'Откройте <b>DriveVitals.dmg</b> в папке «Загрузки».', s2: 'Перетащите DriveVitals в папку <b>«Программы»</b>.', s3: 'Откройте DriveVitals и нажмите на его значок в <b>строке меню</b>.' }
-    : { busy: 'Downloading…', done: 'Download started', head: 'Three steps to go',
+    : { busy: 'Downloading…', done: 'Download started', again: 'Download again', head: 'Three steps to go',
       s1: 'Open <b>DriveVitals.dmg</b> from your Downloads.', s2: 'Drag DriveVitals into <b>Applications</b>.', s3: 'Open DriveVitals and click its icon in the <b>menu bar</b>.' };
   var showSteps = !document.querySelector('.beta-steps'); // beta pages already list the steps
   var links = document.querySelectorAll('a[href*="DriveVitals.dmg"]');
@@ -15,7 +15,7 @@
     links[i].addEventListener('click', function () {
       var a = this;
       if (a.classList.contains('is-busy') || a.classList.contains('is-done')) return;
-      var label = a.textContent, w = a.offsetWidth;
+      var w = a.offsetWidth;
       a.style.minWidth = w + 'px';
       a.classList.add('is-busy');
       a.innerHTML = '<span class="dl-ring" aria-hidden="true"></span>' + T.busy;
@@ -31,7 +31,13 @@
             box.parentNode.insertBefore(d, box.nextSibling);
           }
         }
-        setTimeout(function () { a.classList.remove('is-done'); a.innerHTML = label; a.style.minWidth = ''; }, 6000);
+        // The steps are now the next move, so the button steps back: it becomes a quiet "Download again"
+        // instead of returning to "Download free", which would read as if nothing happened.
+        setTimeout(function () {
+          a.classList.remove('is-done', 'btn-primary', 'btn-light');
+          a.classList.add('btn-quiet');
+          a.innerHTML = T.again; a.style.minWidth = '';
+        }, 4000);
       }, 1500);
     });
   }
