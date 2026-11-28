@@ -6,9 +6,9 @@
   if (/iPhone|iPad|iPod|Android/i.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1)) return;
   var ru = document.documentElement.lang === 'ru';
   var T = ru ? { busy: 'Загрузка…', done: 'Загрузка началась', again: 'Скачать ещё раз', head: 'Осталось три шага',
-      s1: 'Откройте <b>DriveVitals.dmg</b> в папке «Загрузки».', s2: 'Перетащите DriveVitals в папку <b>«Программы»</b>.', s3: 'Откройте DriveVitals и нажмите на его значок в <b>строке меню</b>.' }
+      s1: 'Откройте <b>DriveVitals.dmg</b> в папке «Загрузки».', s2: 'Перетащите DriveVitals в папку <b>«Программы»</b> (Applications).', s3: 'Откройте приложение DriveVitals и нажмите на его значок в <b>строке меню</b>.' }
     : { busy: 'Downloading…', done: 'Download started', again: 'Download again', head: 'Three steps to go',
-      s1: 'Open <b>DriveVitals.dmg</b> from your Downloads.', s2: 'Drag DriveVitals into <b>Applications</b>.', s3: 'Open DriveVitals and click its icon in the <b>menu bar</b>.' };
+      s1: 'Open <b>DriveVitals.dmg</b> from your Downloads.', s2: 'Drag DriveVitals onto the <b>Applications</b> folder next to it.', s3: 'Open DriveVitals and click its icon in the <b>menu bar</b>.' };
   var showSteps = !document.querySelector('.beta-steps'); // beta pages already list the steps
   var links = document.querySelectorAll('a[href*="DriveVitals.dmg"]');
   for (var i = 0; i < links.length; i++) {
