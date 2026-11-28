@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /thanks.html
+Disallow: /beta.html
+
+Sitemap: https://drivevitals.app/sitemap.xml
