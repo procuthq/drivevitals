@@ -206,3 +206,24 @@ kbd { font: 500 14px var(--mono); background: var(--surface); border: 1px solid 
 .closing .fine { font-size: 14px; margin-top: 12px; }
 .btn-light { background: var(--pulse); color: var(--navy); }
 .btn-light:hover { background: #6EE7B7; color: var(--navy); }
+
+/* Buttons respond to a press, like iOS */
+.btn { transition: transform .12s ease, background-color .15s ease; }
+.btn:active { transform: scale(.97); }
+
+/* Download: short "Downloading" state, then the three install steps */
+.btn .dl-ring { width: 16px; height: 16px; border-radius: 50%; border: 2px solid currentColor; border-right-color: transparent; animation: dl-spin .8s linear infinite; }
+@keyframes dl-spin { to { transform: rotate(360deg); } }
+.btn.is-done { pointer-events: none; }
+.install-steps { margin-top: 18px; padding: 18px 20px; border-radius: 14px; background: var(--surface); color: var(--ink);
+  border: 1px solid var(--line); box-shadow: 0 8px 24px rgba(15,27,45,.08); max-width: 30em; text-align: left; }
+.install-steps strong { display: block; font: 700 16px var(--display); margin-bottom: 8px; }
+.install-steps ol { margin: 0; padding-left: 22px; color: var(--muted); }
+.install-steps li { margin-top: 6px; }
+.install-steps b { color: var(--ink); }
+.closing .install-steps { margin-left: auto; margin-right: auto; }
+@media (prefers-reduced-motion: no-preference) {
+  .install-steps { animation: steps-in .45s cubic-bezier(.2,.7,.2,1) both; }
+}
+@keyframes steps-in { from { opacity: 0; transform: translateY(-6px); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) { .btn { transition: none; } .btn:active { transform: none; } .btn .dl-ring { animation: none; } }
